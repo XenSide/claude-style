@@ -1,6 +1,6 @@
 # Colleague output style for Claude Code
 
-Install on a device (needs git access to this private repo, e.g. `gh auth login`):
+Install on any device:
 
     claude plugin marketplace add XenSide/claude-style
     claude plugin install colleague@xenside
