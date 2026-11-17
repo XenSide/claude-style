@@ -1,0 +1,7 @@
+{
+  "name": "xenside",
+  "owner": { "name": "XenSide" },
+  "plugins": [
+    { "name": "colleague", "source": "./plugins/colleague", "description": "Concise, human replies: lead with the point, plain words, no AI tells" }
+  ]
+}
