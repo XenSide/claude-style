@@ -1,9 +1,15 @@
 # Colleague output style for Claude Code
 
-Install on any device:
+Install on a device (needs git access to this private repo, e.g. `gh auth login`):
 
     claude plugin marketplace add XenSide/claude-style
     claude plugin install colleague@xenside
 
-Then set "outputStyle": "Colleague" in ~/.claude/settings.json (or pick it in /config).
-Edit plugins/colleague/output-styles/colleague.md here; other devices get it with `claude plugin marketplace update xenside`.
+Then make it the default: set `"outputStyle": "colleague:Colleague"` in ~/.claude/settings.json.
+(`force-for-plugin` should do this automatically, but Claude Code doesn't apply it yet: anthropics/claude-code#64914.)
+
+To change the style, edit plugins/colleague/output-styles/colleague.md, bump the version in plugin.json and push.
+Devices pick it up with:
+
+    claude plugin marketplace update xenside
+    claude plugin update colleague@xenside
